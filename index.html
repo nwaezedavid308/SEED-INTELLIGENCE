@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seed Intelligenze Portfolio</title>
+    <meta name="description" content="Marketing and branding agency portfolio for Seed Intelligenze, featuring branding, smart offline and online marketing campaigns, websites, and video production." />
+    <meta property="og:title" content="Seed Intelligenze Portfolio" />
+    <meta property="og:description" content="Marketing and branding agency portfolio for Seed Intelligenze, featuring branding, smart offline and online marketing campaigns, websites, and video production." />
+    <script>
+      // Gracefully handle global errors
+      window.addEventListener('error', function(event) {
+        if (event.message && (
+          event.message.indexOf('fetch') > -1 || 
+          event.message.indexOf('getter') > -1 ||
+          event.message.indexOf('Cannot set property fetch') > -1
+        )) {
+          event.preventDefault();
+          return true;
+        }
+      }, true);
+
+      (function() {
+        var originalFetch = window.fetch;
+        try {
+          Object.defineProperty(window, 'fetch', {
+            get: function() { return originalFetch; },
+            set: function(val) { originalFetch = val; },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          // Silent catch if already non-configurable
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

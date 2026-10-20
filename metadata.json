@@ -1,0 +1,6 @@
+{
+  "name": "Seed Intelligenze Portfolio",
+  "description": "Marketing and branding agency portfolio for Seed Intelligenze, featuring branding, smart offline and online marketing campaigns, websites, and video production.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
